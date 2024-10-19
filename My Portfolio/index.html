@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akbar Shah Zar's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- For .ico format -->
+    <!-- OR -->
+    <link rel="icon" type="image/png" href="images/thumbnail.png"> <!-- For .png format -->
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text" id="home">
+                <p>Electrical Engineer</p>
+                <h1>Hi👋🏻, I'm <span>Akbar Shah Zar</span><br>from Pakistan.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------about section---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" width=500>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="abt-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cum distinctio quas totam
+                        laudantium ducimus quaerat earum alias aspernatur ipsum beatae nihil, est corrupti iusto rem? Ab
+                        odit labore ullam!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Electronics</span><br>Computer Architecture, PCB Assembly, </li>
+                            <li><span>Circuit Design</span><br>Designing and Assembling Analog and Digital Circuits</li>
+                            <li><span>Programming</span><br>C/C++, Java, Python, HTML, CSS, JS, and Assembly language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2000 - 2000</span><br>abcd efgh ijkl mnop</li>
+                            <li><span>2000 - 2000</span><br>abcd efgh ijkl mnop</li>
+                            <li><span>2024 - 2025</span><br>Deputy Director Liaison at NUST IEEE Club.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2027</span><br>BSc. Electrical Engg. from NUST Islamabad, Pakistan.</li>
+                            <li><span>2023</span><br>FSc. Pre-Engg. from PGC Gujrat, Pakistan.</li>
+                            <li><span>2021</span><br>SSC Science Group from GHSS Gujrat, Pakistan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------services section--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-row">
+                <div class="services-col">
+                    <img src="images/skill1.png" alt="service-1" width="100%">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cum distinctio quas totam
+                        laudantium ducimus quaerat earum alias aspernatur ipsum beatae nihil, est corrupti iusto rem? Ab
+                        odit labore ullam!</p>
+                </div>
+                <div class="services-col">
+                    <img src="images/skill2.jpg" alt="service-2" width="100%">
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cum distinctio quas totam
+                        laudantium ducimus quaerat earum alias aspernatur ipsum beatae nihil, est corrupti iusto rem? Ab
+                        odit labore ullam!</p>
+                </div>
+                <div class="services-col">
+                    <img src="images/skill3.jpg" alt="service-3" width="100%">
+                    <h2>Software Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cum distinctio quas totam
+                        laudantium ducimus quaerat earum alias aspernatur ipsum beatae nihil, est corrupti iusto rem? Ab
+                        odit labore ullam!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------portfolio section-------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="portfolio-row">
+                <div class="portfolio-col">
+                    <img src="images/portfolio.png" alt="portfolio-1" width="100%">
+                </div>
+                <div class="portfolio-col">
+                    <img src="images/portfolio.png" alt="portfolio-2" width="100%">
+                </div>
+                <div class="portfolio-col">
+                    <img src="images/portfolio.png" alt="portfolio-3" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------contact section--------- -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact</h1>
+            <div class="contact-row">
+                <div class="contact-col">
+                    <img src="images/location.png" alt="location" width="100%">
+                    <h2>Location</h2>
+                    <p>Islamabad, Pakistan</p>
+                </div>
+                <div class="contact-col">
+                    <img src="images/email.png" alt="email" width="100%">
+                    <h2>Email</h2>
+                    <p>
+                        <a href="mailto:abarshahzar@gmail.com">abarshahzar@gmail.com</a>
+                    </p>
+                </div>
+                <div class="contact-col">
+                    <img src="images/phone.png" alt="phone" width="100%">
+                    <h2>Phone</h2>
+                    <p>+92 320 8037047</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------footer section--------- -->
+    <footer id="footer">
+        <div class="footer-col">
+            <p>Created by <a href="https://www.linkedin.com/in/akbar-shah-zar-a44b11291" target="_blank">Akbar Shah Zar</a> | © 2024</p>
+        </div>
+    </footer>    
+
+    <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">↑</button>
+</body>
+
+</html>
