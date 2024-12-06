@@ -1,1 +1,444 @@
- 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/BG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header-text p {
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #be6601;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    font-style: italic;
+    font-family: 'Consolas';
+    color: rgb(228, 62, 11);
+}
+
+/* ----------about.css---------- */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.5s ease;
+}
+
+.tab-links:hover::after {
+    width: 100%;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-links.active-link {
+    color: #ff004f;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #88012c;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-content {
+    display: block;
+}
+
+/* ----------services.css---------- */
+#services {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.service-col {
+    flex-basis: 30%;
+    padding: 20px-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.service-col:hover {
+    background: #ff004f;
+}
+
+.service-col img {
+    width: 100px;
+}
+
+.service-col h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.service-col p {
+    font-size: 14px;
+}
+
+/* ----------portfolio.css---------- */
+#portfolio {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.portfolio-col {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.portfolio-col:hover {
+    cursor: pointer;
+    background: #ff004f;
+}
+
+.portfolio-col img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.portfolio-col h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.portfolio-col p {
+    font-size: 14px;
+}
+
+.portfolio-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.portfolio-col a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.portfolio-col a:hover::after {
+    width: 100%;
+}
+
+/* ----------contact.css---------- */
+#contact {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.contact-col {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.contact-col:hover {
+    cursor: pointer;
+    background: #ff00513a;
+}
+
+.contact-col img {
+    width: 100px;
+}
+
+.contact-col h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.contact-col p {
+    font-size: 14px;
+}
+
+.contact-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.contact-col a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.contact-col a:hover::after {
+    width: 100%;
+}
+
+/* ----------footer.css---------- */
+#footer {
+    padding: 40px 0; /* Adjusted for a smaller padding */
+    background-color: #080808;
+    color: #ababab;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-col {
+    margin: 20px 0; /* Adds margin for spacing */
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer-col a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s ease;
+}
+
+.footer-col a:hover::after {
+    width: 100%; /* Creates underline effect on hover */
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: #ababab;
+}
+
+/* ----------scrollBtn.css---------- */
+#scrollBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position in the viewport */
+    bottom: 20px; /* 20px from the bottom */
+    right: 30px; /* 30px from the right */
+    z-index: 99; /* Make sure it appears on top */
+    font-size: 18px; /* Button text size */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a pointer on hover */
+    padding: 15px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#scrollBtn:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        padding: 10px 5%;
+    }
+    .header-text h1 {
+        font-size: 50px;
+    }
+    .header-text p {
+        font-size: 20px;
+    }
+    .sub-title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-text h1 {
+        font-size: 40px;
+    }
+    .header-text p {
+        font-size: 18px;
+    }
+    .sub-title {
+        font-size: 45px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .tab-links {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .header-text h1 {
+        font-size: 35px;
+    }
+    .header-text p {
+        font-size: 16px;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .portfolio-col, .service-col, .contact-col {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-text h1 {
+        font-size: 30px;
+    }
+    .header-text p {
+        font-size: 14px;
+    }
+    .sub-title {
+        font-size: 35px;
+    }
+} 
